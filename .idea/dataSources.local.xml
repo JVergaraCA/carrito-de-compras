@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Tienda: test" uuid="66b14669-ff38-4a21-bcf5-f931f59915fa">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+    </data-source>
+    <data-source name="Rails Tienda: development" uuid="e7db7f39-e4bb-470a-9275-3d1bdc96210c">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>lautaro</user-name>
+      <resolve-scope>Tienda_development:lautaro,public</resolve-scope>
+    </data-source>
+    <data-source name="Rails Tienda: production" uuid="1348ea80-cfda-432e-aa12-2f4ec2b15885">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>lautaro</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffedfe3dfefdfe4dfeedfebdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
