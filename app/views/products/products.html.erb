@@ -1,0 +1,15 @@
+<div class="jumbotron">
+	<h1 class="text-center">Productos</h1>
+</div>
+<table>
+  <tr>
+    <th>Producto</th>
+  </tr>
+
+<% @products.each do |p| %>
+  <tr>
+	<td><%= p.name  %> </td>
+	 </tr>
+<% end  %>
+</table>
+
