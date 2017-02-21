@@ -44,4 +44,16 @@ Después de agregar el último producto, destruirlo.
 
 Tomar el último producto, actualizarlo a premium.
 
-Actualizar todas las categorías cambiando sus
+Actualizar todas las categorías cambiando sus respectivos nombres a mayúscula (No confundir con el callback visto en clases). Añadir a GIT los archivos respectivos. Hacer push a Github de la rama development. Hacer el merge a master Hacer push a la rama master
+
+Parte Backend avanzadas
+
+1. Crear y checkout a la rama backendavanzado 2. Agregar al modelo de productos el scope premium para seleccionar todos los productos premium. 3. Se debe agregar el scope last_n que recibe como parámetro el número de productos a devolver. No utilizar el método de clase .last puesto que devuelve un array y luego los métodos no serían concatenables Añadir a GIT los archivos respectivos. Hacer push a Github de la rama development. 4. Agregar borrado en cascada los productos al borrar una categoría. 5. Al borrar el último producto de una categoría se debe borrar la categoría (hint: ocupar el callback after_destroy). 6. Crear un campo del tipo integer para categoría llamado descuento que debe ir de 0 a 100. 7. Crear un método de instancia llamado precio_ﬁnal en los productos que muestre el precio con el descuento aplicado. Añadir a GIT los archivos Hacer el commit Hacer el merge a master hacer el push de la rama master
+
+Parte Front-end
+
+1. Crear y checkout a la rama frontend 2. Construir el controller de productos con el método index. 3. En la vista index mostrar todos los productos. 4. Cada producto debe aparecer junto con su categoría. 5. Crear un formulario para ﬁltrar los productos por su nombre. 6. Crear un input distinto para ﬁltrarlos por el precio. 7. La página inicial debe ser la de todos los productos. 8. Agregar al layout bootstrap. 9. Poner el yield dentro de un container de bootstrap. 10. Agregar el navbar y poner dentro de este los links a categorías y a productos. Añadir a GIT los archivos Hacer el commit Hacer el merge a master hacer el push de la rama master
+
+Deployment
+
+Poner las gemas necesarias para Heroku. Crear y push a Heroku Migrar la base de datos de Heroku Correr el seed en Heroku Probar que todo funcione correctamente
