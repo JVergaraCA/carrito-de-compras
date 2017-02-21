@@ -13,6 +13,7 @@ class Product < ApplicationRecord
 			self.premium=false
 		end
 	end
+#unless self.premium.present? || self.premium==true
 
 
 	def destroy_category
