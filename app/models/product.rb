@@ -21,7 +21,14 @@ class Product < ApplicationRecord
 				i.destroy
 			end
 		end
-  end
+  	end
+
+
+  	 def precio_final
+  	 	disc=(self.category.discount * self.cost)/100
+  	 	self.cost-disc
+  	 end
+
 
 
 end

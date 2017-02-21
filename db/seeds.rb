@@ -10,9 +10,9 @@ Product.destroy_all
 Category.destroy_all
 
 3.times do |i|
-	a=Category.create(name: "categoria #{i}")
-	a.products.build(name: "producto #{i}", cost: i).save
-	Product.create!(name: "super product #{i}", category_id:a.id, cost: i*2)
+	a=Category.create(name: "categoria #{i}", discount:i*10)
+	a.products.build(name: "producto #{i}", cost: i+30).save
+	Product.create!(name: "super product #{i}", category_id:a.id, cost: i+25)
 
 end
 
