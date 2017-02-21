@@ -13,5 +13,16 @@ Category.destroy_all
 	a=Category.create(name: "categoria #{i}")
 	a.products.build(name: "producto #{i}", cost: i).save
 	Product.create!(name: "super product #{i}", category_id:a.id, cost: i*2)
+
+end
+
 	Product.last.delete
+	a=Product.last
+	a.premium=true
+	a.save
+
+Category.all.each do |c|
+	may=c.name.capitalize
+	c.name=may
+	c.save
 end
